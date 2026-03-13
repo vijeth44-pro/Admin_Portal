@@ -24,7 +24,7 @@ export default function Login({ onLogin }) {
       );
 
       if (res.data.success) {
-        localStorage.setItem("mytoken", res.data.token);
+        localStorage.setItem("admintoken", res.data.token);
         alert("Admin logged in successfully");
         onLogin && onLogin();
       }

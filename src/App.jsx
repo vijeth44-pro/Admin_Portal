@@ -12,7 +12,7 @@ import Applications from "./pages/Applications";
 
 const App = () => {
   const [isAdminLoggedIn, setIsAdminLoggedIn] = useState(
-    !!localStorage.getItem("mytoken")
+    !!localStorage.getItem("admintoken")
   );
 
   const handleLogin = () => {
@@ -20,7 +20,7 @@ const App = () => {
   };
 
   const handleLogout = () => {
-    localStorage.removeItem("mytoken");
+    localStorage.removeItem("admintoken");
     setIsAdminLoggedIn(false);
   };
 
