@@ -380,9 +380,6 @@ const AdminDashboard = ({ onLogout }) => {
                           <button onClick={() => setSelectedUser(user)} style={{ display: "flex", alignItems: "center", gap: "6px", padding: "7px 14px", borderRadius: "8px", border: "none", cursor: "pointer", fontSize: "12px", fontWeight: 600, background: "#eff6ff", color: "#3b82f6" }}>
                             <Eye size={13} /> View Profile
                           </button>
-                          <button onClick={() => handleBlockUser(user._id)} style={{ display: "flex", alignItems: "center", gap: "6px", padding: "7px 14px", borderRadius: "8px", border: "none", cursor: "pointer", fontSize: "12px", fontWeight: 600, background: user.blocked ? "#dcfce7" : "#fee2e2", color: user.blocked ? "#16a34a" : "#dc2626" }}>
-                            <Shield size={13} />{user.blocked ? "Unblock" : "Block"}
-                          </button>
                           <button onClick={() => toggleExpand(user._id)} style={{ width: 32, height: 32, borderRadius: "8px", border: "none", cursor: "pointer", background: "#f8fafc", color: "#64748b", display: "flex", alignItems: "center", justifyContent: "center" }}>
                             {isExpanded ? <ChevronUp size={15} /> : <ChevronDown size={15} />}
                           </button>
