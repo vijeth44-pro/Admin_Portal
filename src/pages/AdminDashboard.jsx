@@ -135,7 +135,7 @@ const AdminDashboard = ({ onLogout }) => {
 
   const statCards = [
     { label: "Total Users", value: totalUsers, icon: Users, color: "#3b82f6", bg: "#eff6ff", trend: "Active accounts" },
-    { label: "Blocked Users", value: blockedUsers, icon: Shield, color: "#ef4444", bg: "#fef2f2", trend: "Restricted access" },
+    
     { label: "Job Listings", value: jobs.length, icon: Briefcase, color: "#10b981", bg: "#f0fdf4", trend: "Open positions" },
     { label: "Applications", value: totalApplications, icon: FileText, color: "#8b5cf6", bg: "#faf5ff", trend: "Total submitted" },
   ];
@@ -219,7 +219,6 @@ const AdminDashboard = ({ onLogout }) => {
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px" }}>
                 {[
                   { label: "Active Users", value: totalUsers - blockedUsers, color: "#10b981" },
-                  { label: "Blocked Accounts", value: blockedUsers, color: "#ef4444" },
                   { label: "Total Jobs Posted", value: jobs.length, color: "#3b82f6" },
                   { label: "Total Applications", value: totalApplications, color: "#8b5cf6" },
                   { label: "Feedback Received", value: feedbacks.length, color: "#f59e0b" },
